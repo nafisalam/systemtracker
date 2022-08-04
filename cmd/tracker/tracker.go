@@ -3,11 +3,13 @@ package tracker
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"systemtracker/pkg/tracker"
 
 	"github.com/spf13/cobra"
 )
 
+// subcommand to display the list of files and size
 var trackerCmd = &cobra.Command{
 	Use:     "/track",
 	Aliases: []string{"."},
@@ -20,10 +22,11 @@ var trackerCmd = &cobra.Command{
 			fmt.Println(err)
 			return
 		}
-		fmt.Println(string(b))
+		log.Println(string(b))
 	},
 }
 
+// adding the subcommand tracker to the rootcmd.
 func init() {
 	rootCmd.AddCommand(trackerCmd)
 }
