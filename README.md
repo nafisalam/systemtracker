@@ -23,7 +23,7 @@ Instructions to run the application locally:
 
  3. Run the command go mod vendor
 
- 4. Run the command go run main.go /track /[foldername] . you need to provide the complete folder  path in the above command. e.g - go run --race main.go /track /Users/nafisalam/go
+ 4. Run the command go run main.go track /[foldername] . you need to provide the complete folder  path in the above command. e.g - go run --race main.go /track /Users/nafisalam/go
 
  6. To run the unit test , Please run below commands
     1. go to the folder pkg/tracker
